@@ -1,0 +1,33 @@
+@import "./colors";
+@import "./breakpoints";
+
+.page {
+  background: $background;
+  overflow: hidden;
+  background-image: url("/moon.svg");
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+.secondaryText {
+  color: $primary;
+}
+
+@media (max-width: $lg) {
+  .page {
+    background-size: 900px;
+  }
+}
+
+@media (max-width: $md) {
+  .page {
+    background-size: 800px;
+  }
+}
+
+@media (max-width: $sm) {
+  .page {
+    background-size: 600px;
+    background-position-x: -8rem;
+  }
+}
