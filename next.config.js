@@ -6,6 +6,6 @@ module.exports = {
     defaultLocale: 'en',
   },
   images: {
-    domains: ['localhost'],
+    domains: ['localhost', 'willianrod.s3.sa-east-1.amazonaws.com'],
   },
 }

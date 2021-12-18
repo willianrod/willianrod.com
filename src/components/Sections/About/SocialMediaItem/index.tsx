@@ -5,7 +5,7 @@ const SocialMediaItem: React.FC<Maybe<ComponentUtilsSocialMediaItem>> = ({ icon,
   return (
     <div className="social-media-item">
       <a href={url} target="_blank" rel="noreferrer noopener" >
-        <Image src={process.env.NEXT_PUBLIC_API_URL + (icon.data?.attributes?.url || '')} alt={title} width={40} height={40} className={styles.icon} />
+        <Image src={icon.data?.attributes?.url || ''} alt={title} width={40} height={40} className={styles.icon} />
       </a>
     </div>
   )

@@ -14,7 +14,7 @@ const About: React.FC<ComponentSectionsAboutMe> = ({ title, social_media, social
           <div className={styles.bar} />
           <Image
             className={styles.image}
-            src={process.env.NEXT_PUBLIC_API_URL + avatar.data?.attributes?.formats?.medium?.url}
+            src={avatar.data?.attributes?.formats?.medium?.url}
             layout='fixed'
             width={300}
             height={400}
