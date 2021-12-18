@@ -1,0 +1,51 @@
+@import "/src/styles/colors";
+@import "/src/styles/breakpoints";
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $background;
+  position: relative;
+  overflow: hidden;
+}
+
+.orbit {
+  position: absolute;
+  width: 80vw;
+  height: 80vw;
+  max-width: 400px;
+  max-height: 400%;
+
+  animation: spin-right 20s linear infinite;
+  img {
+    rotate: 65deg;
+  }
+}
+
+.planetContainer {
+    max-width: 400px;
+    width: 80%;
+}
+
+/* ---------- Animation ---------- */
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: $sm) {
+    .planet {
+      width: 400px;
+      height: 400px;
+    }
+  }
+  
