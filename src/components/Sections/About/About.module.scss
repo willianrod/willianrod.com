@@ -1,0 +1,38 @@
+@import "/src/styles/colors";
+@import "/src/styles/mixins";
+@import "/src/styles/breakpoints";
+
+.about {
+  @include container();
+  color: $white;
+
+  .content {
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .image {
+    border-radius: 0.5rem;
+  }
+
+  .socialMediaTitle {
+    color: $primary;
+  }
+
+  .socialMediaItems {
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: $md) {
+  .about {
+    .content {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}

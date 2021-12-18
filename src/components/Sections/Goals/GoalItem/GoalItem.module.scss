@@ -1,0 +1,28 @@
+@import "/src/styles/colors";
+
+.container {
+  padding: 0 1rem;
+
+  * {
+    margin: 0;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    color: $white;
+  }
+
+  .position {
+    color: $primary;
+  }
+
+  .dates {
+    color: rgba($white, 0.6);
+  }
+
+  .content {
+    color: $white;
+    line-height: 1.5;
+    padding: 1rem 0 2rem;
+  }
+}

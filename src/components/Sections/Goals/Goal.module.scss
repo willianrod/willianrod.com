@@ -1,0 +1,12 @@
+@import "/src/styles/breakpoints";
+
+.items {
+  margin-top: 2rem;
+  width: 80%;
+}
+
+@media (max-width: $md) {
+  .items {
+    width: 100%;
+  }
+}

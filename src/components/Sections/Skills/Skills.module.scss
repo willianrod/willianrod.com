@@ -1,0 +1,13 @@
+@import "/src/styles/mixins";
+
+.container {
+  @include container();
+  padding: 2rem 1rem;
+
+  .content {
+    margin-top: 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  }
+}

@@ -1,0 +1,31 @@
+@import "/src/styles/colors";
+@import "/src/styles/mixins";
+@import "/src/styles/breakpoints";
+
+.card {
+  @include container();
+  margin: 2rem auto;
+  padding: 1rem 1rem;
+
+  overflow: hidden;
+  min-height: 15rem;
+
+  .content {
+    padding: 2rem 1rem;
+    background-size: 18rem;
+    background-position: right -10% top 125%;
+    background-repeat: no-repeat;
+    background-color: $card-background;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: $md) {
+  .card {
+    .content {
+      padding: 2rem 1rem 4rem 1rem;
+      background-size: 10rem;
+      background-position: right -18% top 108%;
+    }
+  }
+}
