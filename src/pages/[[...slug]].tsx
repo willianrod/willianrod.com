@@ -78,7 +78,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
       redirect: {
         destination: '/404',
         permanent: false,
-      }
+      },
+      revalidate: 10,
     }
   }
 
