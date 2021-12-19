@@ -85,8 +85,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
   return {
     props: {
       page: page?.attributes,
-      revalidate: 60,
     },
+    revalidate: 60,
   };
 }
 
