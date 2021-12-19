@@ -1,7 +1,6 @@
-import Image from "next/image";
-import { useMemo } from "react";
-import Title from "../Title";
-import styles from './Card.module.scss';
+import { useMemo } from 'react'
+import Title from '../Title'
+import styles from './Card.module.scss'
 
 interface ICardProps {
   title: string;
@@ -21,7 +20,7 @@ const Card: React.FC<ICardProps> = ({ children, title, backgroundImagePath }) =>
         {children}
       </div>
     </div>
-  );
+  )
 }
 
-export default Card;
+export default Card

@@ -1,10 +1,17 @@
-import Markdown from '../../Markdown';
-import styles from './WorkExperienceItem.module.scss';
-import dayjs from 'dayjs';
+import Markdown from '../../Markdown'
+import styles from './WorkExperienceItem.module.scss'
+import dayjs from 'dayjs'
 
-const WorkExperienceItem: React.FC<ComponentUtilsWorkExperienceItem> = ({ present_label, company_name, description, position, start_date, end_date }) => {
+const WorkExperienceItem: React.FC<ComponentUtilsWorkExperienceItem> = ({
+  present_label,
+  company_name,
+  description,
+  position,
+  start_date,
+  end_date,
+}) => {
   const renderDate = (date: string) => {
-    return date ? dayjs(date).format('MMM YYYY') : present_label;
+    return date ? dayjs(date).format('MMM YYYY') : present_label
   }
 
   return (
@@ -19,7 +26,7 @@ const WorkExperienceItem: React.FC<ComponentUtilsWorkExperienceItem> = ({ presen
         <Markdown source={description || ''} />
       </div>
     </div>
-  );
+  )
 }
 
-export default WorkExperienceItem;
+export default WorkExperienceItem

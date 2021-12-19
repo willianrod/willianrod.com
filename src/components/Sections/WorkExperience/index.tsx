@@ -1,6 +1,6 @@
-import Card from "../Card";
-import styles from './WorkExperience.module.scss';
-import WorkExperienceItem from "./WorkExperienceItem";
+import Card from '../Card'
+import styles from './WorkExperience.module.scss'
+import WorkExperienceItem from './WorkExperienceItem'
 
 const WorkExperience: React.FC<ComponentSectionsWorkExperience> = ({ items, title, present_label }) => {
   return (
@@ -9,7 +9,7 @@ const WorkExperience: React.FC<ComponentSectionsWorkExperience> = ({ items, titl
         {items.map((item) => <WorkExperienceItem present_label={present_label} key={item?.id} {...item} />)}
       </div>
     </Card>
-  );
+  )
 }
 
-export default WorkExperience;
+export default WorkExperience

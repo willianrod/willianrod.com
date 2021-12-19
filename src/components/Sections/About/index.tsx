@@ -1,11 +1,16 @@
-import Image from 'next/image';
-import Markdown from '../Markdown';
-import Title from '../Title';
-import styles from './About.module.scss';
-import SocialMediaItem from './SocialMediaItem';
+import Image from 'next/image'
+import Markdown from '../Markdown'
+import Title from '../Title'
+import styles from './About.module.scss'
+import SocialMediaItem from './SocialMediaItem'
 
-
-const About: React.FC<ComponentSectionsAboutMe> = ({ title, social_media, social_media_title, description, avatar }) => {
+const About: React.FC<ComponentSectionsAboutMe> = ({
+  title,
+  social_media,
+  social_media_title,
+  description,
+  avatar,
+}) => {
   return (
     <div className={styles.about}>
       <Title title={title} />
@@ -15,10 +20,10 @@ const About: React.FC<ComponentSectionsAboutMe> = ({ title, social_media, social
           <Image
             className={styles.image}
             src={avatar.data?.attributes?.formats?.medium?.url}
-            layout='fixed'
+            layout="fixed"
             width={300}
             height={400}
-            objectFit='cover'
+            objectFit="cover"
             alt="profile-picture"
           />
         </div>
@@ -27,19 +32,16 @@ const About: React.FC<ComponentSectionsAboutMe> = ({ title, social_media, social
           <div>
             <h2 className={styles.socialMediaTitle}>{social_media_title}</h2>
             <div className={styles.socialMediaItems}>
-              {social_media.map(item => (
+              {social_media.map((item) => (
                 // @ts-ignore
-                <SocialMediaItem
-                  key={item?.id}
-                  {...item}
-                />
+                <SocialMediaItem key={item?.id} {...item} />
               ))}
             </div>
           </div>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default About;
+export default About

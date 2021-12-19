@@ -1,6 +1,6 @@
-import Card from "../Card";
-import styles from './Goal.module.scss';
-import GoalItem from "./GoalItem";
+import Card from '../Card'
+import styles from './Goal.module.scss'
+import GoalItem from './GoalItem'
 
 const Goals: React.FC<ComponentSectionsGoals> = ({ items, title,  }) => {
   return (
@@ -9,7 +9,7 @@ const Goals: React.FC<ComponentSectionsGoals> = ({ items, title,  }) => {
         {items.map((item) => <GoalItem key={item?.id} {...item} />)}
       </div>
     </Card>
-  );
+  )
 }
 
-export default Goals;
+export default Goals

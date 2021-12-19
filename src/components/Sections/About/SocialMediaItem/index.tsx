@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/image'
 import styles from './SocialMediaItem.module.scss'
 
 const SocialMediaItem: React.FC<Maybe<ComponentUtilsSocialMediaItem>> = ({ icon, title, url }) => {
@@ -11,4 +11,4 @@ const SocialMediaItem: React.FC<Maybe<ComponentUtilsSocialMediaItem>> = ({ icon,
   )
 }
 
-export default SocialMediaItem;
+export default SocialMediaItem

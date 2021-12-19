@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import dayjs from 'dayjs';
-import styles from './SkillItem.module.scss';
+import Image from 'next/image'
+import dayjs from 'dayjs'
+import styles from './SkillItem.module.scss'
 
 const SkillItem: React.FC<ComponentUtilsSkillItem> = ({ name, since, icon }) => {
   return (
@@ -17,7 +17,7 @@ const SkillItem: React.FC<ComponentUtilsSkillItem> = ({ name, since, icon }) => 
       )}
       <div className={styles.since}>{dayjs(since).format('MMM YYYY')}</div>
     </div>
-  );
+  )
 }
 
-export default SkillItem;
+export default SkillItem

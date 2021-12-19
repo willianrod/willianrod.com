@@ -1,5 +1,5 @@
-import Image from "next/image";
-import styles from "./404.module.scss";
+import Image from 'next/image'
+import styles from './404.module.scss'
 
 const Error404Page = () => {
   return (
@@ -11,4 +11,4 @@ const Error404Page = () => {
   )
 }
 
-export default Error404Page;
+export default Error404Page

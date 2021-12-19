@@ -1,5 +1,5 @@
-import Markdown from '../../Markdown';
-import styles from './GoalItem.module.scss';
+import Markdown from '../../Markdown'
+import styles from './GoalItem.module.scss'
 
 const Goal: React.FC<ComponentUtilsGoalItem> = ({ description, title }) => {
   return (
@@ -9,7 +9,7 @@ const Goal: React.FC<ComponentUtilsGoalItem> = ({ description, title }) => {
         <Markdown source={description || ''} />
       </div>
     </div>
-  );
+  )
 }
 
-export default Goal;
+export default Goal

@@ -1,4 +1,4 @@
-import styles from './Welcome.module.scss';
+import styles from './Welcome.module.scss'
 
 const Welcome: React.FC<ComponentSectionsWelcome> = ({ primary_text, main_text, secondary_text }) => {
   return (

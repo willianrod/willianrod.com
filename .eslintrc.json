@@ -1,6 +1,17 @@
 {
   "extends": "next/core-web-vitals",
   "rules": {
-    "indent": ["error", 2]
+    "indent": ["error", 2],
+    "max-len": ["error", { "code": 120 }],
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "no-var": "error",
+    "prefer-const": "error",
+    "prefer-template": "error",
+    "quotes": ["error", "single"],
+    "semi": ["error", "never"],
+    "space-before-function-paren": ["error", "always"],
+    "vars-on-top": "error",
+    "no-multiple-empty-lines": ["error", { "max": 1 }]
   }
 }

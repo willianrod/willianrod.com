@@ -1,6 +1,6 @@
-import Title from "../Title"
-import SkillItem from "./SkillItem";
-import styles from "./Skills.module.scss"
+import Title from '../Title'
+import SkillItem from './SkillItem'
+import styles from './Skills.module.scss'
 
 const Skills: React.FC<ComponentSectionsSkills> = ({ title, items }) => {
   return (
@@ -13,4 +13,4 @@ const Skills: React.FC<ComponentSectionsSkills> = ({ title, items }) => {
   )
 }
 
-export default Skills;
+export default Skills
