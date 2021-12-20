@@ -268,6 +268,7 @@ type ComponentSectionsSkills = {
   __typename?: "ComponentSectionsSkills";
   id: Scalars["ID"];
   title: Scalars["String"];
+  since_label: Scalars["String"];
   skills: Array<Maybe<ComponentUtilsSkillItem>>;
 };
 
@@ -328,6 +329,7 @@ type ComponentUtilsSkillItem = {
   name?: Maybe<Scalars["String"]>;
   icon?: UploadFileEntityResponse;
   since?: Scalars["Date"];
+  since_label: Scalars["String"];
 };
 
 enum Enum_Componentutilssocialmediaitem_Type {

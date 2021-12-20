@@ -2,7 +2,7 @@ import Image from 'next/image'
 import dayjs from 'dayjs'
 import styles from './SkillItem.module.scss'
 
-const SkillItem: React.FC<ComponentUtilsSkillItem> = ({ name, since, icon }) => {
+const SkillItem: React.FC<ComponentUtilsSkillItem> = ({ name, since, icon, since_label }) => {
   return (
     <div className={styles.container}>
       <div className={styles.bean}/>
@@ -15,7 +15,8 @@ const SkillItem: React.FC<ComponentUtilsSkillItem> = ({ name, since, icon }) => 
           objectFit="contain"
         />
       )}
-      <div className={styles.since}>{dayjs(since).format('MMM YYYY')}</div>
+      <div className={styles.name}>{name}</div>
+      <div className={styles.since}>{since_label}: {dayjs(since).format('MMM YYYY')}</div>
     </div>
   )
 }
