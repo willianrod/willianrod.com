@@ -268,7 +268,7 @@ type ComponentSectionsSkills = {
   __typename?: "ComponentSectionsSkills";
   id: Scalars["ID"];
   title: Scalars["String"];
-  items: Array<Maybe<ComponentUtilsSkillItem>>;
+  skills: Array<Maybe<ComponentUtilsSkillItem>>;
 };
 
 type ComponentSectionsSkillsItemsArgs = {
