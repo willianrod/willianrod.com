@@ -1,5 +1,5 @@
-import { gql } from "@apollo/client";
-import client from "../../../apollo-client";
+import { gql } from '@apollo/client'
+import client from '../../../apollo-client'
 
 export const queryPageBySlug = async (slug: string | null, locale: string) => {
   const { data } = await client.query({
@@ -8,7 +8,7 @@ export const queryPageBySlug = async (slug: string | null, locale: string) => {
             pages (
               locale: "${locale}",
               filters: {
-                slug: {eq: "${slug || "home"}"}
+                slug: {eq: "${slug || 'home'}"}
               }
             ){
               data{
@@ -39,7 +39,7 @@ export const queryPageBySlug = async (slug: string | null, locale: string) => {
                     ... on ComponentSectionsSkills {
                       id
                       title
-                      items{
+                      skills{
                         id
                         name
                         since
@@ -94,10 +94,10 @@ export const queryPageBySlug = async (slug: string | null, locale: string) => {
             }
           }
         `,
-  });
+  })
 
-  return data.pages.data;
-};
+  return data.pages.data
+}
 
 export const queryPages = async () => {
   const { data } = await client.query({
@@ -123,6 +123,6 @@ export const queryPages = async () => {
         }
       }
     `,
-  });
-  return data.pages.data;
-};
+  })
+  return data.pages.data
+}
