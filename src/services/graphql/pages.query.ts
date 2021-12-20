@@ -27,7 +27,7 @@ export const queryPageBySlug = async (slug: string | null, locale: string) => {
                     ... on ComponentSectionsWorkExperience {
                       id
                       title
-                      items {
+                      items (pagination: { limit: 100 }) {
                         id
                         company_name
                         position
@@ -39,7 +39,8 @@ export const queryPageBySlug = async (slug: string | null, locale: string) => {
                     ... on ComponentSectionsSkills {
                       id
                       title
-                      skills{
+                      since_label
+                      skills (pagination: { limit: 100 }){
                         id
                         name
                         since
@@ -64,7 +65,7 @@ export const queryPageBySlug = async (slug: string | null, locale: string) => {
                         }
                       }
                       social_media_title
-                      social_media {
+                      social_media (pagination: { limit: 100 }) {
                         id
                         title
                         url
@@ -82,7 +83,7 @@ export const queryPageBySlug = async (slug: string | null, locale: string) => {
                     ... on ComponentSectionsGoals{
                       id
                       title
-                      items {
+                      items (pagination: { limit: 100 }) {
                         id
                         title
                         description

@@ -12,7 +12,13 @@
 
 .since {
   margin-top: .5rem;
+  color: rgba($white, .6);
+}
+
+.name {
   color: $white;
+  margin-top: .5rem;
+  font-weight: 600;
 }
 
 .bean {
