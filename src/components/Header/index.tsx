@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { useRouter } from 'next/router'
 import styles from './Header.module.scss'
 
@@ -6,8 +7,8 @@ interface ILocale {
 }
 
 const LOCALES_EMOJIS: ILocale = {
-  en: '🇬🇧',
-  'pt-BR': '🇧🇷',
+  en: '/flags/gb.svg',
+  'pt-BR': '/flags/br.svg',
 }
 
 const Header: React.FC = () => {
@@ -22,7 +23,7 @@ const Header: React.FC = () => {
         href={`/${locale}`}
         className={currentLocale === locale ? styles.localeLinkActive : styles.localeLink}
       >
-        {LOCALES_EMOJIS[locale]}
+        <Image src={LOCALES_EMOJIS[locale || 'en']} alt={locale} width={20} height={20} />
       </a>
     ))
   }
